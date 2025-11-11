@@ -1,0 +1,33 @@
+
+:root{ --bg:#fff; --fg:#111; --muted:#666; --link:#0a66c2; --border:rgba(0,0,0,.08); --card:#f7f7f7; }
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0b0b0b; --fg:#f2f2f2; --muted:#b7b7b7; --link:#5aa7ff; --border:rgba(255,255,255,.12); --card:#151515; }
+}
+*{box-sizing:border-box}
+html{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; line-height:1.6}
+body{margin:0; background:var(--bg); color:var(--fg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+a{color:var(--link); text-decoration:none}
+a:hover{text-decoration:underline}
+
+.topnav{max-width:1050px; margin:0 auto; padding:14px 22px; display:flex; gap:18px; align-items:center; border-bottom:1px solid var(--border)}
+.topnav a{font-weight:700; letter-spacing:.01em}
+.topnav a:first-child{margin-right:auto}
+
+.wrap{max-width:1050px; margin:0 auto; padding:26px 22px 60px}
+.grid{display:grid; grid-template-columns:300px 1fr; gap:32px}
+@media (max-width: 880px){ .grid{grid-template-columns:1fr} }
+
+.sidebar{position:sticky; top:24px; align-self:start}
+.avatar{width:168px; height:168px; border-radius:50%; object-fit:cover; border:2px solid rgba(0,0,0,.15); display:block}
+.name{font-size:1.45rem; font-weight:800; margin:14px 0 4px}
+.tag{color:var(--muted); font-size:.98rem; margin:0 0 14px}
+
+.social{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; color:var(--fg)}
+.social li{display:flex; gap:10px; align-items:center; font-size:.98rem}
+.icon{width:18px; height:18px; opacity:.85; flex:0 0 18px}
+
+.mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.95rem}
+
+.content h1{font-size:1.9rem; margin:0 0 14px}
+.content h2{font-size:1.25rem; margin:26px 0 10px}
+.content p{margin:0 0 14px}
