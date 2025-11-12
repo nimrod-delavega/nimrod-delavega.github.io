@@ -4,74 +4,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nimrod De La Vega</title>
-  <meta name="description" content="PhD student in Reinforcement Learning at Mila.">
+  <meta name="description" content="Nimrod De La Vega — PhD student at Mila. Research in reinforcement learning and deep-learning theory.">
   <link rel="stylesheet" href="/assets/style.css">
-<!-- Profile page structured data (fixed) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Nimrod De La Vega",
-    "url": "https://nimrod-delavega.github.io/",
-    "jobTitle": "PhD student",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Mila – Québec AI Institute",
-      "url": "https://mila.quebec/en"
-    },
-    "sameAs": [
-      "https://github.com/nmd95",
-      "https://www.linkedin.com/in/your-handle"
-    ]
+
+  <!-- Profile page structured data (Google requires mainEntity = Person for ProfilePage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Nimrod De La Vega",
+      "url": "https://nimrod-delavega.github.io/",
+      "jobTitle": "PhD student",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mila – Québec AI Institute",
+        "url": "https://mila.quebec/en"
+      },
+      "sameAs": [
+        "https://github.com/nmd95",
+        "https://www.linkedin.com/in/your-handle"
+      ]
+    }
   }
-}
-</script>
+  </script>
 
+  <!-- Optional: site name markup (helps Google show your preferred site name) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://nimrod-delavega.github.io/",
+    "name":"Nimrod De La Vega",
+    "alternateName":"Nimrod De La Vega — Mila"
+  }
+  </script>
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Nimrod De La Vega">
   <meta property="og:description" content="PhD student in Reinforcement Learning at Mila.">
   <meta property="og:url" content="https://nimrod-delavega.github.io/">
   <meta property="og:image" content="https://nimrod-delavega.github.io/assets/portrait.jpg">
 </head>
 <body>
-  
+
+<!-- Inline SVG sprite for icons -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 2C8.7 2 6 4.7 6 8c0 4.4 6 14 6 14s6-9.6 6-14c0-3.3-2.7-6-6-6zm0 8.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 5.5 12 5.5s2.5 1.1 2.5 2.5S13.4 10.5 12 10.5z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></symbol>
-  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.9 3.2 9.1 7.7 10.5.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 1.9 2.7 1.3.1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.7.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.2 5.8.4.3.8 1 .8 2.1v3c0 .3.2.7.8.6 4.6-1.4 7.7-5.6 7.7-10.5C23.1 5.3 18.3.5 12 .5z"/></symbol>
-  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1C14 8.8 16 8 18.4 8 23.2 8 24 11.2 24 15.5V24h-5v-7.2c0-1.7 0-3.8-2.3-3.8s-2.7 1.8-2.7 3.7V24H8z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24">
+    <path d="M12 2C8.7 2 6 4.7 6 8c0 4.4 6 14 6 14s6-9.6 6-14c0-3.3-2.7-6-6-6zm0 8.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 5.5 12 5.5s2.5 1.1 2.5 2.5S13.4 10.5 12 10.5z"></path>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24">
+    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"></path>
+  </symbol>
+  <symbol id="i-github" viewBox="0 0 24 24">
+    <path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.9 3.2 9.1 7.7 10.5.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.6 1.9 2.7 1.3.1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.7.9 1.2 2 1.2 3.3 0 4.5-2.7 5.5-5.2 5.8.4.3.8 1 .8 2.1v3c0 .3.2.7.8.6 4.6-1.4 7.7-5.6 7.7-10.5C23.1 5.3 18.3.5 12 .5z"></path>
+  </symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24">
+    <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1C14 8.8 16 8 18.4 8 23.2 8 24 11.2 24 15.5V24h-5v-7.2c0-1.7 0-3.8-2.3-3.8s-2.7 1.8-2.7 3.7V24H8z"></path>
+  </symbol>
 </svg>
 
-  <nav class="topnav">
-    <a href="/">Nimrod De La Vega</a>
-    <a href="/publications/">Publications</a>
-    <a href="/files/cv.pdf" target="_blank" rel="noopener">CV</a>
-  </nav>
+<nav class="topnav">
+  <a href="/">Nimrod De La Vega</a>
+  <a href="/publications/">Publications</a>
+  <a href="/files/cv.pdf" target="_blank" rel="noopener">CV</a>
+</nav>
 
-  <div class="wrap">
-    <div class="grid">
-      <aside class="sidebar">
-        <img src="/assets/portrait.jpg" alt="Portrait of Nimrod De La Vega" class="avatar">
-        <div class="name">Nimrod De La Vega</div>
-        <div class="tag">PhD student · MILA - Québec AI Institute</div>
+<div class="wrap">
+  <div class="grid">
+    <aside class="sidebar">
+      <img src="/assets/portrait.jpg" alt="Nimrod De La Vega" class="avatar">
+      <div class="name">Nimrod De La Vega</div>
+      <div class="tag">PhD student · Mila</div>
 
-        <ul class="social">
-          <li><svg class="icon"><use href="#i-map"/></svg> Montreal</li>
-          <li><svg class="icon"><use href="#i-mail"/></svg> <span class="mono">nimrod.delavega@mila.quebec</span></li>
-          <li><svg class="icon"><use href="#i-mail"/></svg> <span class="mono">nimrod.delavega@gmail.com</span></li>
-          <li><a href="https://github.com/nmd95" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg> GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a></li>
-        </ul>
-      </aside>
+      <ul class="social">
+        <li><svg class="icon"><use href="#i-map"></use></svg> Montreal</li>
+        <li><svg class="icon"><use href="#i-mail"></use></svg> <span class="mono">nimrod.delavega@mila.quebec</span></li>
+        <li><svg class="icon"><use href="#i-mail"></use></svg> <span class="mono">nimrod.delavega@gmail.com</span></li>
+        <li><a href="https://github.com/nmd95" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"></use></svg> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"></use></svg> LinkedIn</a></li>
+      </ul>
+    </aside>
 
-  <main class="content">
-    <h1>About me</h1>
-    <p>I am a first-year PhD student at <a href="https://mila.quebec/en" target="_blank" rel="noopener">Mila – Québec AI Institute</a> in Montréal, where I am fortunate to be advised by <a href="https://academic.sologen.net/" target="_blank" rel="noopener">Amir-massoud Farahmand</a>. I’m broadly interested in reinforcement learning and the theoretical foundations of deep learning, aiming to bridge mathematical understanding with methods that work in the real world.</p>
-    <p>Previously, I completed an MSc and a BSc at Tel Aviv University, working with <a href="https://www.cohennadav.com/index.html" target="_blank" rel="noopener">Nadav Cohen</a> and <a href="https://plus-tau.github.io/" target="_blank" rel="noopener">Mahmood Sharif</a>.</p>
-  </main>
-    </div>
+    <main class="content">
+      <h1>About me</h1>
+      <p>I am a first-year PhD student at <a href="https://mila.quebec/en" target="_blank" rel="noopener">Mila – Québec AI Institute</a> in Montréal, where I am advised by <a href="https://academic.sologen.net/" target="_blank" rel="noopener">Amir-Massoud Farahmand</a>. I’m broadly interested in reinforcement learning and the theoretical foundations of deep learning, aiming to bridge mathematical understanding with methods that work in the real world.</p>
+      <p>Previously, I completed an MSc and a BSc at Tel Aviv University, working with <a href="https://www.cohennadav.com/index.html" target="_blank" rel="noopener">Nadav Cohen</a> and <a href="https://plus-tau.github.io/" target="_blank" rel="noopener">Mahmood Sharif</a>.</p>
+    </main>
   </div>
+</div>
+
 </body>
 </html>
